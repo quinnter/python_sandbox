@@ -75,3 +75,4 @@ if any([i % 2 == 0 for i in nums]):
 # (0, 55) /n(1, 44) n/(2, 33) etc
 for value in enumerate(nums):
    print(value)
+

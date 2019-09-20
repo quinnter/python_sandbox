@@ -6,3 +6,5 @@ print(abs(-99))                   # distance of a num from zero, absolute num
 print(abs(42))
 print(sum([1, 2, 3, 4, 5]))       # total sum of all numbers 
 # print(round()) # rounds number to a specified digit
+
+
