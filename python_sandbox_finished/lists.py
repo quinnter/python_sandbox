@@ -55,5 +55,23 @@ print(numbers[1:-1]) # 2, 3 ,4 ,5 ,6 ,7
 cubes = [i**3 for i in range(5)]
 print(cubes)
 # comprehension can also includes if statements
+# but if the range is too extensive you can come across MemoryErrors
 evens=[i**2 for i in range(10) if i**2 % 2 == 0]
 print(evens)
+
+# LIST FUNCTIONS
+
+nums = [55, 44, 33, 22, 11]
+
+# All : returns true if all are true
+if all([i > 5 for i in nums]):
+   print("All larger than 5")
+
+# Any : returns true if at least one is true
+if any([i % 2 == 0 for i in nums]):
+   print("At least one is even")
+
+# Enumerate : itereates through values and indices 
+# (0, 55) /n(1, 44) n/(2, 33) etc
+for value in enumerate(nums):
+   print(value)
