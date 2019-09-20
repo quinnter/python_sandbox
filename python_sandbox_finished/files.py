@@ -22,3 +22,11 @@ myFile.close()
 myFile = open('myfile.txt', 'r+')
 text = myFile.read(100)
 print(text)
+
+# best practice for working with files 
+
+try:
+    file = open('myfile.txt')
+    print("file" + file.read())
+finally:
+    file.close()
