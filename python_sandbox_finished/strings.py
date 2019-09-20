@@ -49,6 +49,9 @@ print(s.endswith('d'))
 # Split into a list
 print(s.split())
 
+# join a list 
+print(", ".join(["foo", "bar"]))
+
 # Find position
 print(s.find('r'))
 
@@ -60,3 +63,5 @@ print(s.isalpha())
 
 # Is all numeric
 print(s.isnumeric())
+
+
