@@ -1,7 +1,12 @@
 # A Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# can be nested inside a tuple
 
-# Create tuple
+# Create tuple, with or without parenthesis
 fruits = ('Apples', 'Oranges', 'Grapes')
+fruits3 = "Banana", "Kiwi", "Blueberry"
+
+# empty tuples can be made 
+empty_tpl = ()
 
 # Using a constructor
 # fruits2 = tuple(('Apples', 'Oranges', 'Grapes'))
@@ -10,10 +15,12 @@ fruits = ('Apples', 'Oranges', 'Grapes')
 fruits2 = ('Apples',)
 
 # Get value
-print(fruits[1])
+print(fruits[1])  # Oranges
+print(fruits3[1]) # Kiwi
 
 # Can't change value
 # fruits[0] = 'Pears'
+# would return a TypeError
 
 # Delete tuple
 del fruits2
