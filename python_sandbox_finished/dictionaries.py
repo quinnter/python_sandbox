@@ -29,8 +29,6 @@ print(person.get('email'))      # None
 print(person.get(12345, "not in dictionary")) # not in dictionary
 print(person.get('last_name', "not in dictionary")) # Doe
 
-
-
 # Add key/value
 person['phone'] = '555-555-5555'
 
