@@ -15,12 +15,12 @@ def countdown():
 for i in countdown():
   print(i)
 
-def infinite_sevens():
-  while True:
-    yield 7
+# def infinite_sevens():
+#   while True:
+#     yield 7
         
-for i in infinite_sevens():
-  print(i)
+# for i in infinite_sevens():
+#   print(i)
 
 def numbers(x):
   for i in range(x):
@@ -54,6 +54,7 @@ def say_whee():
 
 def decorator_function(original_function):
     def wrapper_function():
+        print('wrapper executed this before {}'.format(original_function.__name__))
         return original_function()
     return wrapper_function
 
@@ -80,4 +81,4 @@ def display():
 display()
 
 # ^^^ How decorators should be written
-# 
+

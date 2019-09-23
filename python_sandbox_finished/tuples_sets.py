@@ -52,4 +52,23 @@ fruits_set.clear()
 # Delete
 del fruits_set
 
+# can also use methods like len
+# it's faster to check if an item is part of a set, rather than a list
+
+# Sets can be combined with mathmatical operations
+# Union | :  creates new set containing items from both (no duplicates!)
+# Intersection & : gets items only in BOTH
+# Difference - : gets items from the first set, but not the second
+# Symmetric Difference ^ : gets items from either set, but not both
+
+first = {1, 2, 3, 4, 5, 6}
+second = {4, 5, 6, 7, 8, 9}
+
+print(first | second) # {1, 2, 3, 4, 5, 6, 7, 8 ,9}
+print(first & second) # {4, 5, 6}
+print(first - second) # {1, 2, 3}
+print(second - first) # {8, 7, 9}
+print(first ^ second) # {1, 2, 3, 7, 8 ,9}
+
+
 print(fruits_set)
